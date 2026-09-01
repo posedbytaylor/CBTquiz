@@ -53,3 +53,173 @@
     color: #fff;
     font-size: 12px;
     letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 999px;
+    margin-bottom: 26px;
+  }
+  .hero h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 1.25;
+    margin: 0 0 18px;
+    color: var(--ink);
+  }
+  .hero p.sub {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--muted);
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  /* Form card */
+  .form-card {
+    background-color: var(--white);
+    border-radius: 24px;
+    padding: 36px 32px;
+    margin: 36px 0;
+    box-shadow: 0 10px 30px rgba(217, 155, 160, 0.15);
+  }
+
+  .form-card label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--ink);
+    margin: 0 0 8px;
+  }
+
+  .form-card input[type="text"],
+  .form-card input[type="email"] {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #EFE0DE;
+    border-radius: 12px;
+    background-color: var(--cream);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    margin-bottom: 18px;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  .form-card input[type="text"]:focus,
+  .form-card input[type="email"]:focus {
+    border-color: var(--rose);
+  }
+
+  .form-card button {
+    width: 100%;
+    background-color: var(--rose);
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  .form-card button:hover {
+    background-color: var(--rose-deep);
+  }
+
+  .form-note {
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 14px;
+  }
+
+  /* What you'll get */
+  .whatyoulget {
+    padding: 8px 0 40px;
+  }
+  .whatyoulget h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 24px;
+    color: var(--ink);
+  }
+  .whatyoulget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .whatyoulget li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #F3E5E3;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .whatyoulget li:last-child { border-bottom: none; }
+  .whatyoulget li .icon {
+    color: var(--rose);
+    font-size: 16px;
+    flex-shrink: 0;
+    padding-top: 1px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px 0 56px;
+  }
+  footer p {
+    font-size: 12px;
+    color: var(--muted);
+    margin: 4px 0;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 30px; }
+    .form-card { padding: 28px 22px; border-radius: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="logo-row">
+    <img src="https://raw.githubusercontent.com/posedbytaylor/CBTquiz/main/assets/cbt-logo.png" alt="Coached by Taylor">
+  </div>
+
+  <div class="hero">
+    <span class="kicker">Join the list</span>
+    <h1>Your weekly note from Ellie, straight to your inbox</h1>
+  </div>
+
+  <div class="form-card">
+    <p style="font-size: 15px; line-height: 1.6; color: var(--muted); text-align: center; margin: 0 0 22px;">Pop your email in and you're on the list — one click away.</p>
+    <a href="https://b3ef44cc.sibforms.com/serve/MUIFAN2abu1XgT3oy0rrBDVHSmYOaFrbJhiC098zxmEdGpoy3nPO2fPOmzJnRxv7GiiYHIjqREK05BvMleI2zDa09Pt9EqByGMBBf4GQ67f1UWAMok8pfs7W3dM2yknZ7tCIRSWNKtctLASiZ378_QU-t5leYIc5jdBhkGY9hWqAvbTqLPXqzYEscpZvolLsxW-8JjorCfO-w1JaMA=="
+       style="display:block; text-align:center; width: 100%; background-color: var(--rose); color: #fff; border: none; padding: 15px 20px; border-radius: 999px; font-size: 15px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; text-decoration: none; box-sizing: border-box;">
+      Yes please, sign me up
+    </a>
+  </div>
+
+  <div class="whatyoulget">
+    <h2>What you'll get</h2>
+    <ul>
+      <li><span class="icon">✓</span> Weekly tips on training, food and mindset, straight from Ellie</li>
+      <li><span class="icon">✓</span> Actionable tips to support your health/fitness journey</li>
+      <li><span class="icon">✓</span> First access to new offers, events, and coaching spaces</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>Coached by Taylor · Leeds, West Yorkshire</p>
+    <p>posedbytaylor@gmail.com</p>
+  </footer>
+
+</div>
+</body>
+</html>
